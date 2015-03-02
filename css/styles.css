@@ -1,0 +1,17 @@
+/*GLOBAL*/
+body{
+	background: URL("../img/bg.jpg");
+}
+
+/*LAYOUT*/
+.container{
+	width: 80%;
+	margin: 0 auto;
+	background: gray;
+}
+
+/*ADAPTIVE CONTENT*/
+iframe, img{
+	max-width: 100%;
+	width: 100%;
+}
