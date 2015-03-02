@@ -21,3 +21,9 @@ iframe, img{
 	max-width: 100%;
 	width: 100%;
 }
+
+@media(min-width: 960px){
+	#home{
+		width: 300px;
+	}
+}
