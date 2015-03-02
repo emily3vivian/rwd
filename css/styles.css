@@ -10,6 +10,12 @@ body{
 	background: gray;
 }
 
+article section {
+	width: 45%;
+	float: left;
+	padding: 2%;
+}
+
 /*ADAPTIVE CONTENT*/
 iframe, img{
 	max-width: 100%;
