@@ -1,29 +1,179 @@
-@@ -20,8 +20,7 @@
-	article section {
-		width: 45%;
-		float: left;
+/* GLOBAL */
+body {
+	background: url("../img/bg.jpg");
+}
 
-		padding: 8px 8px 8px 8px;
+/* LAYOUT */
+.container {
+	background: gray;
+	margin: 0 auto;
+	width: 90%; /* Designers Choice */
+	max-width: 1440px; /* Designers Choice */
+}
+
+article section {
+	float: left;
+	padding: 2%;
+	width: 46%;
+}
+
+h1, h3{
+	color: maroon;
+}
+
+h1{
+	animation: scale 3s 1s infinite linear;
+	-webkit-animation: scale 5s infinite;
+}
+
+.paragraph{
+	text-align: left;
+}
+.content{
+	text-align: center; 
+}
+
+.nav{
+	float: right;
+	background: black;
+	margin: 10px 10px;
+	padding: 10px 10px;
+	height: 25px;
+	width: 190px;
+}
+
+.nav a:link{
+	color: white;
+	font-family: 'Raleway', sans-serif; font-weight 300;
+	font-size: 20px;
+}
+
+.nav a:visited{
+	color: gray;
+	font-family: 'Raleway', sans-serif; font-weight 300;
+	font-size: 20px;
+}
+
+.nav a:hover, hover{
+	color: purple;
+	font-family: 'Raleway', sans-serif; font-weight 300;
+	font-size: 20px;
+}
+
+.nav ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+	width: 60px;
+}
+
+.nav li{
+	display: inline;
+}
+
+/* Adpative Content */
+iframe, img {
+	max-width: 100%;
+	width: 100%;
+}
+
+/* Max dimensions for logo */
+#home {
+	max-width: 300px;
+	width: 300px;
+}
+
+/* Large Desktop minimum */
+@media (min-width: 1025px) {
+	
+	/* Yellow BG for testing 
+	body { background: yellow; }*/
+	
+	/* Show for Desktop */
+	.desktop-video {
+		height: 320px;
+		max-width: 640px;
+		width: 640px;
+	}
+
+	/* Hide for Mobile */
+	.mobile-video {
+		display: none;
+	}
+
+	/* Center Video */
+	main {
+		text-align: center;
+	}
+}
+
+/* Desktop (Standard) */
+@media (max-width: 1024px ) {
+	
+	/* Red BG for testing 
+	body { background: red; }*/
+	
+	/* Show for Desktop */
+	.desktop-video {
+		height: 320px;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	/* Hide for Mobile */
+	.mobile-video {
+		display: none;
+	}
+}
+
+/* Tablet  */
+@media (max-width: 768px ) {
+	
+	/* Green BG for Testing
+	body { background: green; }*/
+	
+	/* Hide for Desktop */
+	.desktop-video {
+		display: none;
+	}
+
+	/* Hide for Mobile */
+	.mobile-video {
+		width: 100%;
 		display: block;
 	}
 
-	h1{
-@@ -33,10 +32,16 @@
-	}
-
-	.typeform-widget{
-		height: 100px;
+	/* Single Colum Tablet */
+	article section {
+		float: none;
 		width: 100%;
-		height: 400px;
-		width: 200%;
+		width: 100%;
 	}
+}
 
-	.paragraph{
-		padding: 8px 8px 8px 8px;
-	}
+/* Mobile (Landscape) */
+@media (max-width: 480px ) {
+	
+	/* Blue BG for Testing 
+	body { background: blue; }*/
+}
 
+/*keyframes*/
+@keyframes scale {
+  from { 
+    transform: scale(1);
+  }
+  to {
+    transform: scale(4);
+  }
+}
 
-
-/*nav*/
-	.nav{
-		background: black;
+@-webkit-keyframes scale {
+  from { 
+    transform: scale(1);
+  }
+  to {
+    transform: scale(4);
+  }
+}
